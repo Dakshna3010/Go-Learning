@@ -1,8 +1,9 @@
+//slice basics
 package main
 import "fmt"
 
 func main(){
-	as:=[...]string{"Almond Biscotti Café",
+	XS :=[]string{"Almond Biscotti Café",
 	"Banana Pudding ",
 	"Balsamic Strawberry (GF)",
 	"Bittersweet Chocolate (GF)",
@@ -33,7 +34,10 @@ func main(){
 	"Vanilla Caramel Blondie",
 	"Vietnamese Cinnamon (GF)",
 	"Wolverine Tracks (GF)"}
-	fmt.Println(as)
-	fmt.Println(len(as))
-	fmt.Printf("%T \n",as)
+	fmt.Println(XS)
+	fmt.Printf("%T",XS)
+
+	for i,v:= range XS{
+		fmt.Printf(" %v -  %v\n",i,v)
+	}
 }
